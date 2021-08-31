@@ -23,7 +23,7 @@ const Register = props => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    props.registerUser(form, 'login');  /* se agrega el login para que cuando se registre lo mande para login */
+    props.registerUser(form, '/login');  /* se agrega el login para que cuando se registre lo mande para login */
     // props.history.push('/register');
   }
   return (
