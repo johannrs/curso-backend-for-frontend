@@ -1,15 +1,19 @@
 {
   "name": "react-base",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.16.x"
+  },
   "description": "React Base",
-  "main": "index.js",
+  "main": "src/server/index.js",
   "scripts": {
     "build": "webpack-cli --config webpack.config.js --colors",
     "lint": "eslint src/frontend --fix",
     "start:dev": "nodemon src/server/index",
     "test": "jest",
     "test:watch": "jest --watch", 
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "start": "node src/server/index.js"
   },
   "keywords": [
     "react",
